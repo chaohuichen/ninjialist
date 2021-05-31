@@ -3,13 +3,15 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from '../comps/Navbar'
 import Footer from '../comps/Footer'
+import Link from 'next/link'
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <h1>home page</h1>
       <p>psakdjaklsdjl;askjdl;asjd;lajsdlkj;lks</p>
-      <Footer />
+      <Link href="/ninjas">
+        <a>See Ninja Listing</a>
+      </Link>
     </div>
   )
 }
